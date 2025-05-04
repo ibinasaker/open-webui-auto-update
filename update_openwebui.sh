@@ -1,8 +1,8 @@
 # bash/bin
 
-crm="$(sudo docker image ls | grep open-webui | grep none | awk '{sub(/\r$/,"")} NF && !/^#/{print $3}')"
+#crm="$(sudo docker image ls | grep open-webui | grep none | awk '{sub(/\r$/,"")} NF && !/^#/{print $3}')"
 
-sudo docker image rm -f $crm
+#sudo docker image rm -f $crm
 
 sudo docker pull ghcr.io/open-webui/open-webui:main
 pid1=$!
